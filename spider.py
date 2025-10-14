@@ -130,8 +130,3 @@ def update_json_with_crawler(json_path, crawler_events):
             json.dump(json_events, f, indent=2)
 
     return sync_mode
-
-
-if __name__ == "__main__":
-    results = exe_crawler(wd, USERNAME, PASSWORD, url)
-    update_json_with_crawler("events.json", results)
