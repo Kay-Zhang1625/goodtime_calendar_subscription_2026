@@ -109,9 +109,3 @@ def sync_ics_with_json(json_path, ics_path, sync_mode):
 
     else:
         print("ICS 無須更新。")
-
-
-if __name__ == "__main__":
-    json_file = "events.json"
-    ics_file = "mycalendar.ics"
-    sync_ics_with_json(json_file, ics_file, sync_mode)
