@@ -36,10 +36,7 @@ jobs:
           pip install webdriver-manager
 
       - name: Run course spider script
-        run: python spider.py
-
-      - name: Generate ICS calendar
-        run: python gen_ics.py
+        run: python main.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
