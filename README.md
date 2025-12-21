@@ -16,13 +16,16 @@ An automated calendar scraping tool that runs daily via GitHub Actions. It fetch
 
 ![image](https://github.com/Kay-Zhang1625/update_ics/blob/main/ics_flow_chart.png)
 
-This project utilizes GitHub Actions for CI/CD automation. The process is as follows:
+This project automates the entire process through a structured CI/CD pipeline as shown in the diagram above:
 
-1. **Environment Initialization**: Sets up Chrome and required dependencies on an Ubuntu Runner.
-2. **Secure Login & Scraping**: Logs in via **GitHub Secrets** and crawls reservation data using Selenium.
-3. **Data Transformation**: Stores raw data in `events.json` and converts it into an `mycalendar.ics` file.
-4. **Data Sync**: Automatically commits and pushes updated files back to the GitHub repository.
-5. **Auto-Deployment**: Deploys the latest files to GitHub Pages to provide a public URL for subscription.
+1. **Trigger**: A **Daily Cron Job** (GitHub Actions) initiates the workflow every 2 days.
+2. **Runtime (Ubuntu)**: The environment is initialized on an Ubuntu runner to perform two core tasks:
+   - **Step 1: Scrape Web Data**: Using Python and Chrome to log in and fetch reservation details.
+   - **Step 2: Data Processing**: Converting the scraped JSON data into the standard ICS format.
+3. **GitHub Repository**: The updated `events.json` and `mycalendar.ics` files are committed and pushed back to the repository.
+4. **GitHub Pages**: The latest `.ics` file is deployed as a static site, generating a permanent link for subscription.
+5. **Subscription**: The final output is synced to your **Google/iOS Calendar** via the provided URL.
+
 
 ## 🛠️ Tech Stack
 
