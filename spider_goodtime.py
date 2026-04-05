@@ -63,6 +63,7 @@ def exe_crawler(wd, USERNAME, PASSWORD, url):
         records = soup.find('div', id='unfinish').select(".row.record")
 
         courses = []
+        seen_courses = set()
         for record in records:
             cols = record.select('.col-xs-8 > .col-sm-3.col-xs-12')
             raw_date = cols[0].get_text(strip=True)
@@ -74,13 +75,16 @@ def exe_crawler(wd, USERNAME, PASSWORD, url):
             time_list = re.findall(r'\d{2}:\d{2}', raw_time)
             start_time, end_time = time_list
 
-            course = {
-                'date': date,
-                'start_time': start_time,
-                'end_time': end_time,
-                'title': title
-            }
-            courses.append(course)
+            course_key = f"{date}|{start_time}|{title}"
+            if course_key not in seen_courses:
+                course = {
+                    'date': date,
+                    'start_time': start_time,
+                    'end_time': end_time,
+                    'title': title
+                }
+                courses.append(course)
+                seen_courses.add(course_key)
 
         return courses
 
