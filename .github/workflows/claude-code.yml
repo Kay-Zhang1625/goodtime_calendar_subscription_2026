@@ -13,7 +13,9 @@ on:
 jobs:
   claude_mention:
     # 只有當評論中包含 @claude 且不是機器人留的言時才執行
-    if: contains(github.event.comment.body, '@claude') || contains(github.event.issue.body, '@claude')
+    if: >
+      (contains(github.event.comment.body, '@claude') || contains(github.event.issue.body, '@claude')) &&
+      github.event.comment.user.login == 'Kay-Zhang1625'
     runs-on: ubuntu-latest
     permissions:
       contents: write
