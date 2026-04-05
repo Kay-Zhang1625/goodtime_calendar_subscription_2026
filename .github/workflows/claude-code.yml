@@ -1,0 +1,50 @@
+name: Claude Code Mention
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  issues:
+    types: [opened]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  claude_mention:
+    # 只有當評論中包含 @claude 且不是機器人留的言時才執行
+    if: contains(github.event.comment.body, '@claude') || contains(github.event.issue.body, '@claude')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+      actions: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Claude Code
+        uses: anthropic/claude-code-action@v1
+        with:
+          claude_api_key: ${{ secrets.CLAUDE_API_KEY }}
+          custom_instructions: |
+            你是這個 Python 專案的程式助手。專案會自動爬取「好時光女生運動樂園」的課程預約，轉換成 iCalendar 格式供用戶訂閱。
+
+            ## 三階段 Pipeline
+            1. spider_goodtime.py — 使用 Selenium headless Chrome 登入 17fit.com/goodtime，BeautifulSoup 解析 HTML，回傳事件清單與 sync mode
+            2. spider_goodtime.py:update_json_with_crawler() — 比對新舊資料，產生四種 sync mode：None（無變化）、init（初次執行）、append（新增課程）、replace（課程取消，需重建）
+            3. gen_ics.py — 依 sync mode 決定全量重建或增量寫入 mycalendar.ics，時區為 Asia/Taipei (UTC+8)
+
+            ## 關鍵資料
+            - events.json：持久化事件資料，欄位為 date、start_time、end_time、title
+            - mycalendar.ics：輸出的日曆訂閱檔案，部署至 GitHub Pages
+            - 環境變數：ICS_GOODTIME_USERNAME、ICS_GOODTIME_PASSWORD（存於 GitHub Secrets）
+
+            ## 注意事項
+            - 這是純 Python 專案，依賴列在 requirements.txt，不使用 Node.js
+            - UID 由 date|start_time|title 組合生成，需保持穩定避免行事曆重複事件
+            - 登入流程依賴特定 CSS selector，若網站改版需一併更新
