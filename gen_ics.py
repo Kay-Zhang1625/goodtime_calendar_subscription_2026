@@ -1,8 +1,13 @@
 import os
-import uuid
+import hashlib
 import json
 from icalendar import Calendar, Event
 from datetime import datetime, timezone, timedelta
+
+def generate_uid(date, start_time, title):
+    key = f"{date}|{start_time}|{title}"
+    uid_hash = hashlib.md5(key.encode()).hexdigest()
+    return f"{uid_hash}@goodtime.17fit.com"
 
 def init_ics(json_file, ics_file):
     with open(json_file, 'r', encoding='utf-8') as f:
@@ -23,7 +28,7 @@ def init_ics(json_file, ics_file):
         event.add('dtstart', start_dt)
         event.add('dtend', end_dt)
         event.add('dtstamp', datetime.now(timezone.utc))
-        event.add('uid', str(uuid.uuid4()))
+        event.add('uid', generate_uid(e['date'], e['start_time'], e['title']))
         cal.add_component(event)
 
     with open(ics_file, 'wb') as f:
@@ -40,6 +45,8 @@ def sync_ics_with_json(json_path, ics_path, sync_mode):
         all_events = json.load(f)
     now = datetime.now()
 
+    tz = timezone(timedelta(hours=8))
+
     # 2. 依 sync_mode 處理
     if sync_mode == "init" or sync_mode == "replace":
         # 全面重建：歷史事件 + json 內所有未來事件
@@ -52,13 +59,12 @@ def sync_ics_with_json(json_path, ics_path, sync_mode):
         for e in all_events:
           event = Event()
           event.add('summary', e['title'])
-          tz = timezone(timedelta(hours=8))
           start_dt = datetime.strptime(f"{e['date']} {e['start_time']}", '%Y-%m-%d %H:%M').replace(tzinfo=tz)
           event.add('dtstart', start_dt)
           end_dt = datetime.strptime(f"{e['date']} {e['end_time']}", '%Y-%m-%d %H:%M').replace(tzinfo=tz)
           event.add('dtend', end_dt)
           event.add('dtstamp', datetime.now(timezone.utc))
-          event.add('uid', str(uuid.uuid4()))
+          event.add('uid', generate_uid(e['date'], e['start_time'], e['title']))
           cal.add_component(event)
 
         with open(ics_path, 'wb') as f:
@@ -89,7 +95,6 @@ def sync_ics_with_json(json_path, ics_path, sync_mode):
                 existing_keys.add(key)
 
         # 新增 json 中未來且尚未存在的事件
-        tz = timezone(timedelta(hours=8))
         for e in all_events:
             key = f"{e['title']}|{e['date']} {e['start_time']}"
             start_dt = datetime.strptime(f"{e['date']} {e['start_time']}", '%Y-%m-%d %H:%M')
@@ -100,7 +105,7 @@ def sync_ics_with_json(json_path, ics_path, sync_mode):
                 end_dt = datetime.strptime(f"{e['date']} {e['end_time']}", '%Y-%m-%d %H:%M').replace(tzinfo=tz)
                 event.add('dtend', end_dt)
                 event.add('dtstamp', datetime.now(timezone.utc))
-                event.add('uid', str(uuid.uuid4()))
+                event.add('uid', generate_uid(e['date'], e['start_time'], e['title']))
                 cal.add_component(event)
                 print(f"新增事件到 ICS: {e['title']}({e['date']} {e['start_time']})")
         with open(ics_path, 'wb') as f:
