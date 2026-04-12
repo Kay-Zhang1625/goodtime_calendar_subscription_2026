@@ -14,8 +14,17 @@ jobs:
       CRAWLER_PASSWORD: ${{ secrets.ICS_GOODTIME_PASSWORD }}
       
     steps:
+      - name: Generate GitHub App Token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
       - name: Checkout repository
         uses: actions/checkout@v6
+        with:
+          token: ${{ steps.generate_token.outputs.token }}
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -47,5 +56,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ steps.generate_token.outputs.token }}
           publish_dir: .
