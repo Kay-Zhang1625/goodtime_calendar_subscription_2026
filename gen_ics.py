@@ -1,8 +1,15 @@
 import os
 import uuid
 import json
+import hashlib
 from icalendar import Calendar, Event
 from datetime import datetime, timezone, timedelta
+
+
+def _stable_uid(e):
+    key = f"{e['date']}|{e['start_time']}|{e['title']}"
+    digest = hashlib.md5(key.encode('utf-8')).hexdigest()
+    return f"{digest}@goodtime.17fit.com"
 
 def init_ics(json_file, ics_file):
     with open(json_file, 'r', encoding='utf-8') as f:
@@ -58,7 +65,7 @@ def sync_ics_with_json(json_path, ics_path, sync_mode):
           end_dt = datetime.strptime(f"{e['date']} {e['end_time']}", '%Y-%m-%d %H:%M').replace(tzinfo=tz)
           event.add('dtend', end_dt)
           event.add('dtstamp', datetime.now(timezone.utc))
-          event.add('uid', str(uuid.uuid4()))
+          event.add('uid', _stable_uid(e))
           cal.add_component(event)
 
         with open(ics_path, 'wb') as f:
@@ -100,7 +107,7 @@ def sync_ics_with_json(json_path, ics_path, sync_mode):
                 end_dt = datetime.strptime(f"{e['date']} {e['end_time']}", '%Y-%m-%d %H:%M').replace(tzinfo=tz)
                 event.add('dtend', end_dt)
                 event.add('dtstamp', datetime.now(timezone.utc))
-                event.add('uid', str(uuid.uuid4()))
+                event.add('uid', _stable_uid(e))
                 cal.add_component(event)
                 print(f"新增事件到 ICS: {e['title']}({e['date']} {e['start_time']})")
         with open(ics_path, 'wb') as f:

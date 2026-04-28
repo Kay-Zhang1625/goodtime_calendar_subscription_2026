@@ -1,12 +1,13 @@
 import re
 import json
-import time
 import os
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -29,37 +30,31 @@ url ='https://17fit.com/account/login?show_fb=1&show_line=1&show_17fit=1&success
 
 def exe_crawler(wd, USERNAME, PASSWORD, url):
     try:
+        wait = WebDriverWait(wd, 15)
         wd.get(url)
-        time.sleep(2)
 
         # 1. 輸入帳號
-        username_input = wd.find_element(By.CSS_SELECTOR, 'input.st-mb-0.st-text-black.st-p-3.st-w-full')
+        username_input = wait.until(EC.presence_of_element_located(
+            (By.CSS_SELECTOR, 'input.st-mb-0.st-text-black.st-p-3.st-w-full')))
         username_input.send_keys(USERNAME)
 
         # 2. 點擊「下一步」按鈕
-        next_btn = wd.find_element(By.TAG_NAME, "button")
-        next_btn.click()
-        time.sleep(2)
+        wd.find_element(By.TAG_NAME, "button").click()
 
         # 3. 輸入密碼
-        password_input = wd.find_element(By.CSS_SELECTOR, 'input[type="password"].st-mb-0.st-text-black.st-p-3.st-w-full')
+        password_input = wait.until(EC.presence_of_element_located(
+            (By.CSS_SELECTOR, 'input[type="password"].st-mb-0.st-text-black.st-p-3.st-w-full')))
         password_input.send_keys(PASSWORD)
 
         # 4. 點擊「登入」按鈕
-        login_btn = wd.find_element(By.TAG_NAME, "button")
-        login_btn.click()
-        time.sleep(3)
+        wd.find_element(By.TAG_NAME, "button").click()
 
-        if "login_success" in wd.current_url:
-            print("登入成功！")
-
-        # 5. 進入課程頁面
+        # 5. 進入課程頁面，等待 #unfinish 出現再讀 page source
         wd.get("https://goodtime.17fit.com/my-class")
-        time.sleep(2)
-        html = wd.page_source
+        wait.until(EC.presence_of_element_located((By.ID, "unfinish")))
 
         # 6. 取得課程資訊
-        soup = BeautifulSoup(html, "html.parser")
+        soup = BeautifulSoup(wd.page_source, "html.parser")
         records = soup.find('div', id='unfinish').select(".row.record")
 
         courses = []
@@ -84,8 +79,6 @@ def exe_crawler(wd, USERNAME, PASSWORD, url):
 
         return courses
 
-    except Exception as e:
-        print("錯誤：", e)
     finally:
         wd.quit()
 
