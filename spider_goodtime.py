@@ -49,6 +49,9 @@ def exe_crawler(wd, USERNAME, PASSWORD, url):
         # 4. 點擊「登入」按鈕
         wd.find_element(By.TAG_NAME, "button").click()
 
+        # 等待登入 redirect 完成，確保 session cookie 已寫入
+        wait.until(lambda d: "account/login" not in d.current_url)
+
         # 5. 進入課程頁面，等待 #unfinish 出現再讀 page source
         wd.get("https://goodtime.17fit.com/my-class")
         wait.until(EC.presence_of_element_located((By.ID, "unfinish")))
