@@ -289,14 +289,20 @@
   },
   {
     "date": "2026-09-01",
-    "start_time": "19:10",
-    "end_time": "20:10",
-    "title": "\u3010\u6c11\u6b0a\u3011\u7a7a\u4e2d\u745c\u4f3d \u7d2e\u5be6\u57fa\u672c\u529f \uff084\u597d\u5e63\uff09\uff0a"
+    "start_time": "19:20",
+    "end_time": "20:20",
+    "title": "\u3010\u5927\u5b89\u3011\u7a7a\u4e2d\u4e32\u9023 \u4ed9\u5973\u990a\u6210\u73ed (4\u597d\u5e63) \uff5c\u9032\u968e"
   },
   {
     "date": "2026-09-05",
     "start_time": "14:30",
     "end_time": "15:30",
     "title": "\u3010\u4e2d\u548c\u3011\u7a7a\u4e2d\u745c\u4f3d \u4ed9\u5973\u98db\u9ad8\u9ad8\uff084\u597d\u5e63\uff09\uff0a\uff5c\u4e2d\u968e"
+  },
+  {
+    "date": "2026-09-08",
+    "start_time": "19:10",
+    "end_time": "20:10",
+    "title": "\u3010\u6c11\u6b0a\u3011\u7a7a\u4e2d\u745c\u4f3d \u7d2e\u5be6\u57fa\u672c\u529f \uff084\u597d\u5e63\uff09\uff0a"
   }
 ]
