@@ -2,7 +2,7 @@ name: Auto Update Course Calendar
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # 奇數日UTC+8下午10點自動執行
+    - cron: '0 14 * * *'  # 每日 UTC+8 晚上 10 點自動執行
   workflow_dispatch: # 允許手動執行
 
 jobs:
@@ -51,7 +51,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Auto update events"
-          file_pattern: events.json mycalendar.ics
+          file_pattern: ledger.json mycalendar.ics
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

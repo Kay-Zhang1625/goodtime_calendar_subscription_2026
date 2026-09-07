@@ -1,2 +1,7 @@
 CLAUDE.md
 __pycache__/
+.pytest_cache/
+.DS_Store
+
+# Playwright MCP snapshots/logs (may contain account details)
+.playwright-mcp/

@@ -1,0 +1,675 @@
+{
+  "cursor": "2026-06-24 12:33:52",
+  "entries": [
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-01-05",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-06-30",
+      "class_start_time": "19:00",
+      "title": "【民權】空中瑜伽 美力新高度（4好幣) ＊",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-07-04",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-07-07",
+      "class_start_time": "19:10",
+      "title": "【民權】空中瑜伽 紮實基本功 （4好幣）＊",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-06-29",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲 (4好幣) ＊ Rene代課",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-07-14",
+      "class_start_time": "19:10",
+      "title": "【民權】空中瑜伽 紮實基本功 （4好幣）＊",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-07-18",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-07-21",
+      "class_start_time": "19:10",
+      "title": "【民權】空中瑜伽 紮實基本功 （4好幣）＊",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-07-25",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-07-28",
+      "class_start_time": "19:10",
+      "title": "【民權】空中瑜伽 紮實基本功 （4好幣）＊",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-08-04",
+      "class_start_time": "19:10",
+      "title": "【民權】空中瑜伽 紮實基本功 （4好幣）＊",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-08-08",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-08-29",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-09-01",
+      "class_start_time": "19:20",
+      "title": "【大安】空中串連 仙女養成班 (4好幣) ｜進階",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-09-05",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-09-08",
+      "class_start_time": "19:10",
+      "title": "【民權】空中瑜伽 紮實基本功 （4好幣）＊",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-09-12",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階 芷伃代課",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "1970-01-01 00:00:00",
+      "action": "book",
+      "reservation_id": null,
+      "class_date": "2026-09-15",
+      "class_start_time": "19:20",
+      "title": "【大安】空中串連 仙女養成班 (4好幣) ｜進階",
+      "points": null,
+      "source": "events.json"
+    },
+    {
+      "txn_datetime": "2026-01-01 20:47:21",
+      "action": "book",
+      "reservation_id": "20120401",
+      "class_date": "2026-01-12",
+      "class_start_time": "20:35",
+      "title": "【中和】低空療癒 失眠救星（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-01 20:48:03",
+      "action": "book",
+      "reservation_id": "20120412",
+      "class_date": "2026-01-10",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-11 18:04:09",
+      "action": "cancel",
+      "reservation_id": "20120401",
+      "class_date": "2026-01-12",
+      "class_start_time": "20:35",
+      "title": "【中和】低空療癒 失眠救星（4好幣）＊",
+      "points": 4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-20 00:52:09",
+      "action": "book",
+      "reservation_id": "20266934",
+      "class_date": "2026-01-27",
+      "class_start_time": "20:20",
+      "title": "【中和】空中瑜伽 入門先修班 （4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-20 00:53:36",
+      "action": "book",
+      "reservation_id": "20266939",
+      "class_date": "2026-01-31",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-20 00:54:06",
+      "action": "book",
+      "reservation_id": "20266940",
+      "class_date": "2026-02-02",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-25 19:38:39",
+      "action": "book",
+      "reservation_id": "20313818",
+      "class_date": "2026-01-26",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-25 19:40:55",
+      "action": "cancel",
+      "reservation_id": "20266940",
+      "class_date": "2026-02-02",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": 4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-25 19:42:04",
+      "action": "book",
+      "reservation_id": "20313846",
+      "class_date": "2026-02-07",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-01-27 09:44:43",
+      "action": "book",
+      "reservation_id": "20327822",
+      "class_date": "2026-02-09",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-02-01 12:29:30",
+      "action": "book",
+      "reservation_id": "20371001",
+      "class_date": "2026-02-14",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-02-01 12:29:30",
+      "action": "book",
+      "reservation_id": "20371002",
+      "class_date": "2026-02-14",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-02-01 12:39:47",
+      "action": "book",
+      "reservation_id": "20371080",
+      "class_date": "2026-02-05",
+      "class_start_time": "20:20",
+      "title": "【中和】皮拉提斯 優雅躺著練（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-02-16 22:29:15",
+      "action": "book",
+      "reservation_id": "20507255",
+      "class_date": "2026-02-23",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-04 18:00:22",
+      "action": "book",
+      "reservation_id": "20627918",
+      "class_date": "2026-03-07",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-04 18:01:02",
+      "action": "book",
+      "reservation_id": "20627923",
+      "class_date": "2026-03-09",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-04 18:01:35",
+      "action": "book",
+      "reservation_id": "20627928",
+      "class_date": "2026-03-14",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-04 18:02:08",
+      "action": "book",
+      "reservation_id": "20627933",
+      "class_date": "2026-03-16",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-13 11:58:27",
+      "action": "cancel",
+      "reservation_id": "20627928",
+      "class_date": "2026-03-14",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": 4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-13 11:59:08",
+      "action": "book",
+      "reservation_id": "20700148",
+      "class_date": "2026-03-21",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-13 11:59:40",
+      "action": "book",
+      "reservation_id": "20700153",
+      "class_date": "2026-03-23",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-22 17:28:29",
+      "action": "book",
+      "reservation_id": "20775695",
+      "class_date": "2026-03-28",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-22 17:29:04",
+      "action": "book",
+      "reservation_id": "20775699",
+      "class_date": "2026-04-04",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-22 17:39:52",
+      "action": "cancel",
+      "reservation_id": "20700153",
+      "class_date": "2026-03-23",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲（4好幣）＊",
+      "points": 4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-25 20:07:10",
+      "action": "cancel",
+      "reservation_id": "20775695",
+      "class_date": "2026-03-28",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": 4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-25 20:08:42",
+      "action": "book",
+      "reservation_id": "20805312",
+      "class_date": "2026-03-29",
+      "class_start_time": "09:50",
+      "title": "【中和】空中瑜伽 輕盈少女是我（4好幣）",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-27 16:19:53",
+      "action": "cancel",
+      "reservation_id": "20805312",
+      "class_date": "2026-03-29",
+      "class_start_time": "09:50",
+      "title": "【中和】空中瑜伽 輕盈少女是我（4好幣）",
+      "points": 4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-27 16:20:53",
+      "action": "book",
+      "reservation_id": "20820795",
+      "class_date": "2026-03-28",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 中階 甜心飛高高（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-27 16:22:00",
+      "action": "book",
+      "reservation_id": "20820811",
+      "class_date": "2026-04-06",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲 (4好幣) ＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-03-28 22:32:53",
+      "action": "book",
+      "reservation_id": "20831272",
+      "class_date": "2026-03-31",
+      "class_start_time": "19:00",
+      "title": "【民權】空中瑜伽 美力新高度＊（４好幣）",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-04-03 10:06:49",
+      "action": "book",
+      "reservation_id": "20878997",
+      "class_date": "2026-04-11",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-04-11 18:10:34",
+      "action": "book",
+      "reservation_id": "20968081",
+      "class_date": "2026-04-14",
+      "class_start_time": "19:00",
+      "title": "【民權】空中瑜伽 美力新高度（4好幣) ＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-04-11 18:11:21",
+      "action": "book",
+      "reservation_id": "20968089",
+      "class_date": "2026-04-18",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-04-20 11:00:19",
+      "action": "book",
+      "reservation_id": "21065544",
+      "class_date": "2026-04-25",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-04-20 11:00:55",
+      "action": "book",
+      "reservation_id": "21065552",
+      "class_date": "2026-05-02",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-04-29 00:35:11",
+      "action": "book",
+      "reservation_id": "21151028",
+      "class_date": "2026-05-09",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階 代課",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-04-29 22:17:54",
+      "action": "book",
+      "reservation_id": "21160530",
+      "class_date": "2026-04-30",
+      "class_start_time": "20:20",
+      "title": "【中和】皮拉提斯 優雅躺著練（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-04-29 22:20:10",
+      "action": "book",
+      "reservation_id": "21160553",
+      "class_date": "2026-05-05",
+      "class_start_time": "19:00",
+      "title": "【民權】空中瑜伽 美力新高度（4好幣) ＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-05-03 12:43:52",
+      "action": "book",
+      "reservation_id": "21194196",
+      "class_date": "2026-05-16",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-05-08 18:16:07",
+      "action": "book",
+      "reservation_id": "21243923",
+      "class_date": "2026-05-18",
+      "class_start_time": "19:25",
+      "title": "【中和】皮拉提斯 腹肌戀習曲 (4好幣) ＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-05-08 18:17:45",
+      "action": "book",
+      "reservation_id": "21244013",
+      "class_date": "2026-05-12",
+      "class_start_time": "19:00",
+      "title": "【民權】空中瑜伽 美力新高度（4好幣) ＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-05-08 20:56:40",
+      "action": "cancel",
+      "reservation_id": "21151028",
+      "class_date": "2026-05-09",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階 代課",
+      "points": 4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-05-09 19:03:35",
+      "action": "book",
+      "reservation_id": "21253531",
+      "class_date": "2026-05-10",
+      "class_start_time": "10:30",
+      "title": "【中和】皮拉提斯 體態賦活記（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-05-23 11:11:43",
+      "action": "book",
+      "reservation_id": "21389315",
+      "class_date": "2026-05-26",
+      "class_start_time": "19:00",
+      "title": "【民權】空中瑜伽 美力新高度（4好幣) ＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-05-23 11:12:37",
+      "action": "book",
+      "reservation_id": "21389321",
+      "class_date": "2026-05-30",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-05-24 01:30:52",
+      "action": "book",
+      "reservation_id": "21396490",
+      "class_date": "2026-05-24",
+      "class_start_time": "17:10",
+      "title": "【中和】香氛瑜伽 溫柔修復（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-06-04 00:40:03",
+      "action": "book",
+      "reservation_id": "21515779",
+      "class_date": "2026-06-09",
+      "class_start_time": "19:00",
+      "title": "【民權】空中瑜伽 美力新高度（4好幣) ＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-06-06 18:02:12",
+      "action": "book",
+      "reservation_id": "21547130",
+      "class_date": "2026-06-07",
+      "class_start_time": "10:30",
+      "title": "【中和】皮拉提斯 體態賦活記（4好幣）＊",
+      "points": -4,
+      "source": "csv"
+    },
+    {
+      "txn_datetime": "2026-06-24 12:33:52",
+      "action": "book",
+      "reservation_id": "21742752",
+      "class_date": "2026-06-27",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 甜心飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "csv"
+    }
+  ]
+}
