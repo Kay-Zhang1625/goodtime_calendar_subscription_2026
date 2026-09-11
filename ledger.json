@@ -1,5 +1,5 @@
 {
-  "cursor": "2026-09-04 21:05:20",
+  "cursor": "2026-09-11 15:27:33",
   "entries": [
     {
       "txn_datetime": "1970-01-01 00:00:00",
@@ -886,6 +886,26 @@
       "action": "book",
       "reservation_id": "22471602",
       "class_date": "2026-09-15",
+      "class_start_time": "19:20",
+      "title": "【大安】空中串連 仙女養成班 (4好幣) ｜進階",
+      "points": -4,
+      "source": "passes"
+    },
+    {
+      "txn_datetime": "2026-09-11 15:26:47",
+      "action": "book",
+      "reservation_id": "22529821",
+      "class_date": "2026-09-19",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階",
+      "points": -4,
+      "source": "passes"
+    },
+    {
+      "txn_datetime": "2026-09-11 15:27:33",
+      "action": "book",
+      "reservation_id": "22529824",
+      "class_date": "2026-09-22",
       "class_start_time": "19:20",
       "title": "【大安】空中串連 仙女養成班 (4好幣) ｜進階",
       "points": -4,
