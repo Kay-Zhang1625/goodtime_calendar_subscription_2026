@@ -1,5 +1,5 @@
 {
-  "cursor": "2026-10-01 08:30:21",
+  "cursor": "2026-10-06 20:39:04",
   "entries": [
     {
       "txn_datetime": "1970-01-01 00:00:00",
@@ -988,6 +988,16 @@
       "class_date": "2026-10-13",
       "class_start_time": "19:20",
       "title": "【大安】空中瑜伽 中階穩定班 (4好幣)",
+      "points": -4,
+      "source": "passes"
+    },
+    {
+      "txn_datetime": "2026-10-06 20:39:04",
+      "action": "book",
+      "reservation_id": "22751672",
+      "class_date": "2026-10-17",
+      "class_start_time": "14:30",
+      "title": "【中和】空中瑜伽 仙女飛高高（4好幣）＊｜中階",
       "points": -4,
       "source": "passes"
     }
